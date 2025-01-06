@@ -25,7 +25,7 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
   - **VirtualBox:** [Download Here](https://www.virtualbox.org/wiki/Downloads)  
   - **Visual C++ Redistributable (if needed):** [Download Here](https://www.itechtics.com/microsoft-visual-c-redistributable-versions-direct-download-links/#google_vignette)  
 
----
+
 
 ## 🛠️ Installation Steps  
 
@@ -33,13 +33,11 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 1. Download the zipped **VDI file** from the link above.  
 2. Extract the file to a folder of your choice.  
 
----
 
 ### 2️⃣ Install VirtualBox  
 1. Download and install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads).  
 2. (Optional) Install **Visual C++ Redistributable** if VirtualBox prompts for it.  
 
----
 
 ### 3️⃣ Set Up the Virtual Machine  
 1. Open VirtualBox and click on the **New** button.  
@@ -51,7 +49,6 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 4. Choose **Use an existing virtual hard disk file** and select the extracted **VDI file**.  
 5. Click **Next** and **Finish** to complete the virtual machine setup.  
 
----
 
 ### 4️⃣ Start the Virtual Machine  
 1. Select the newly created virtual machine in the VirtualBox Manager.  
@@ -75,7 +72,6 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 2. **Develop, test, and document VLSI chip designs.**  
 3. **Contribute to RISC-V open-source projects.**  
 
----
 
 ## 🌟 Acknowledgments
 
