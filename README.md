@@ -9,7 +9,7 @@ The Program is guided by **Kunal Ghosh**, an expert in the field of VLSI and RIS
 - **College**: Dayananda Sagar College of Engineering  
 - **Email ID**: [ghanshyamsingh85165@gmail.com](mailto:ghanshyamsingh85165@gmail.com)  
 - **GitHub Profile**: [ghanshyampratap](https://github/ghanshyampratap/)  
-- **LinkedIn Profile**: [maazm-ece-vlsi](https://www.linkedin.com/in/ghanshyampratapsingh/)  
+- **LinkedIn Profile**: [ghanshyampratapsingh](https://www.linkedin.com/in/ghanshyampratapsingh/)  
 
 ---
 
