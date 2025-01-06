@@ -13,7 +13,7 @@ The Program is guided by **Kunal Ghosh**, an expert in the field of VLSI and RIS
 
 ---
 
-# 🚀 Task -1 :- Steps to Open VDI on VirtualBox  
+# 🚀 Task -1 :- Create a "samsung-riscv" repo, install RISC-V toolchain, follow lab videos, capture snapshots with date/time, and upload to GitHub. 
 
 Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Virtual Disk Image (VDI) on Oracle VirtualBox.  
 
