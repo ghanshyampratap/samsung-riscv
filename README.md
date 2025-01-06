@@ -13,11 +13,10 @@ The Program is guided by **Kunal Ghosh**, an expert in the field of VLSI and RIS
 
 ---
 
-# 🚀 Task -1 :- Create a "samsung-riscv" repo, install RISC-V toolchain, follow lab videos, capture snapshots with date/time, and upload to GitHub. 
+# 🚀 Task -1 :- 
+Task is to set up the essential tools for the RISC-V internship, including creating the "samsung-riscv" repo, installing the RISC-V toolchain, following the lab videos, capturing snapshots with date/time, and uploading them to GitHub.
 
 Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Virtual Disk Image (VDI) on Oracle VirtualBox.  
-
----
 
 ## 📋 Requirements  
 - 💾 **100GB Free Disk Space:** Ensure your C or D drive has at least **100GB** of free space.  
