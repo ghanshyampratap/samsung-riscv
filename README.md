@@ -60,11 +60,9 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 - The virtual machine should boot up successfully with the operating system and software pre-installed on the VDI.  
 - Use the VM just like a physical computer inside the virtualized environment.  
 
----
 
 🎉 **Congratulations!** You’ve successfully set up and launched the VDI on VirtualBox. Enjoy your virtual environment! 🚀  
 
----
 
 ## 🛠️ Future Tasks
 
