@@ -72,7 +72,8 @@ This image showcases:
 3. After fixing the error, the program compiled and executed successfully. ✅
 4. The output confirmed the sum calculation: **55**. 💯
 
-![C Program Compilation](image1_url)
+![C Program Compilation](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task1/task1.1.jpg?raw=true)
+
 
 ## 🔹 **Image 2: Disassembly of RISC-V Object File** 🧩🖤
 
