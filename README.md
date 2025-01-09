@@ -88,7 +88,8 @@ This image highlights:
    - Function instructions for `register_fini` and `_start`. 📌
 3. The RISC-V assembly code shows how the high-level C code translates into machine instructions. 🛠️
 
-![RISC-V Disassembly](image2_url)
+![RISC-V Disassembly](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task1/task1.2.jpg?raw=true)
+
 
 ## 🔹 **Key Takeaways** 📚:
 - **Image 1**: Demonstrates the development and testing of a C program. 🧑‍💻
