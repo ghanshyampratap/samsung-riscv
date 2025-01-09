@@ -55,46 +55,43 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 2. Click **Start** to launch it.
 
 ---
-# 📘  Understanding Compilation and RISC-V Disassembly
+# 📘 **Understanding Compilation and RISC-V Disassembly** 🖥️🔧
 
-This section explains the step-by-step process of **compiling a C program** and understanding its **disassembly** on a RISC-V system. The provided images demonstrate these concepts in action.
+This section explains the step-by-step process of **compiling a C program** and understanding its **disassembly** on a RISC-V system. The provided images demonstrate these concepts in action. 👨‍💻
 
-
-## 🔹 **Image 1: C Program Compilation and Execution**
+## 🔹 **Image 1: C Program Compilation and Execution** 🖱️💻
 
 This image showcases:
-- The process of compiling and running a simple C program on a Linux terminal.
-- Resolving errors related to missing header files.
-- The final output: calculating the sum of numbers from 1 to 10.
+- The process of compiling and running a simple C program on a Linux terminal. 🖥️
+- Resolving errors related to missing header files. ⚠️
+- The final output: calculating the sum of numbers from 1 to 10. ➕🔢
 
 ### **Steps Explained**:
-1. The program file `program1.c` is compiled using `gcc`.
-2. An error occurred initially due to a missing `stdio.h` file.
-3. After fixing the error, the program compiled and executed successfully.
-4. The output confirmed the sum calculation: **55**.
+1. The program file `program1.c` is compiled using `gcc`. ⚙️
+2. An error occurred initially due to a missing `stdio.h` file. ❌
+3. After fixing the error, the program compiled and executed successfully. ✅
+4. The output confirmed the sum calculation: **55**. 💯
 
 ![C Program Compilation](image1_url)
 
-
-## 🔹 **Image 2: Disassembly of RISC-V Object File**
+## 🔹 **Image 2: Disassembly of RISC-V Object File** 🧩🖤
 
 This image highlights:
-- Disassembly of a compiled C program (`sum.o`) for the **RISC-V architecture**.
-- Understanding the `.text` section and the corresponding assembly instructions.
-- Key RISC-V instructions like `auipc`, `addi`, and `jal`.
+- Disassembly of a compiled C program (`sum.o`) for the **RISC-V architecture**. 🏗️
+- Understanding the `.text` section and the corresponding assembly instructions. 📜
+- Key RISC-V instructions like `auipc`, `addi`, and `jal`. 🔑
 
 ### **Steps Explained**:
-1. The object file `sum.o` is disassembled using the `objdump -d` command.
+1. The object file `sum.o` is disassembled using the `objdump -d` command. 🔍
 2. The `.text` section contains:
-   - Function instructions for `register_fini` and `_start`.
-3. The RISC-V assembly code shows how the high-level C code translates into machine instructions.
+   - Function instructions for `register_fini` and `_start`. 📌
+3. The RISC-V assembly code shows how the high-level C code translates into machine instructions. 🛠️
 
 ![RISC-V Disassembly](image2_url)
 
-
-## 🔹 **Key Takeaways**:
-- **Image 1**: Demonstrates the development and testing of a C program.
-- **Image 2**: Shows how a program is translated into RISC-V-specific assembly instructions, crucial for understanding chip-level programming.
+## 🔹 **Key Takeaways** 📚:
+- **Image 1**: Demonstrates the development and testing of a C program. 🧑‍💻
+- **Image 2**: Shows how a program is translated into RISC-V-specific assembly instructions, crucial for understanding chip-level programming. 💡⚙️
 
 ---
 
