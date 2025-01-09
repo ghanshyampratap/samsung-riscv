@@ -59,7 +59,7 @@ Welcome to the **VDI Setup Guide**! This guide will help you set up and run a Vi
 2. Click **Start** to launch it.
 
 ---
-# 📘 **Understanding Compilation and RISC-V Disassembly** 🖥️🔧
+# 📘**Understanding Compilation and RISC-V Disassembly** 🖥️
 
 This section explains the step-by-step process of **compiling a C program** and understanding its **disassembly** on a RISC-V system. The provided images demonstrate these concepts in action. 👨‍💻
 
