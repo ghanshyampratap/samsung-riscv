@@ -1,4 +1,4 @@
-🚀** Welcome to My Repository for the RISC-V Talent Development Program!** 💡
+## 🚀 Welcome to My Repository for the RISC-V Talent Development Program! 💡
 
 Powered by Samsung Semiconductor India Research (SSIR) and VLSI System Design (VSD), this program is all about exploring the cutting-edge RISC-V architecture 🖥️. With the power of open-source tools 🛠️, we're offering hands-on experience in VLSI chip design 🧠 and the RISC-V architecture 🔧.
 
