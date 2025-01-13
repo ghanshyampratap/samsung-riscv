@@ -132,7 +132,8 @@ This repository contains the results and analysis of **Task 2**, which involves 
   - Loop structure and readability are preserved.
   - Suitable for debugging and maintaining clarity.
 
-![RISC-V Disassembly -O1]([Task2.2_O1.png](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.2_O1.png?raw=true))
+![RISC-V Disassembly -O1](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.2_O1.png?raw=true)
+
 
 
 ## 🔹 **Image 2: Disassembly with `-Ofast`** 🧩⚡
@@ -144,19 +145,13 @@ This repository contains the results and analysis of **Task 2**, which involves 
   - Improved execution speed by reducing instruction count.
   - Harder to interpret due to optimizations.
 
-![RISC-V Disassembly -Ofast]([Task2.1ofast.dump.png](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.1ofast.dump.png?raw=true))
-
----
+![RISC-V Disassembly -Ofast](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.1ofast.dump.png?raw=true)
 
 ## 🔹 **Conclusion**
 
 - Use **`-O1`** for moderate performance and better readability.
 - Use **`-Ofast`** for maximum performance in critical scenarios.
 
----
-```
-
-Let me know if you need any adjustments!
 ---
 
 ## ✅ Validation  
