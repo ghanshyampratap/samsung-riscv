@@ -100,6 +100,64 @@ This image highlights:
 - **Image 2**: Shows how a program is translated into RISC-V-specific assembly instructions, crucial for understanding chip-level programming. 💡⚙️
 
 ---
+# 🚀 Task 2: SPIKE Simulation with Compiler Optimization 
+
+This repository contains the results and analysis of **Task 2**, which involves using the **SPIKE Simulator** and analyzing performance under different compiler optimization flags using the **RISC-V GCC toolchain**.
+
+## 📌 Task Overview:
+
+1. 🎥 **Review SPIKE Simulation Video**:  
+   Watch the provided video to understand the program flow and SPIKE simulation process.  
+
+2. 🛠️ **Run Simulation with Optimization Flags**:  
+   Simulate performance using the following compiler optimization flags:
+   - `-O1` (standard optimization)
+   - `-Ofast` (aggressive optimization)
+
+3. ✍️ **Write a Simple C Program**:  
+   Create a basic C program (e.g., sum of numbers, factorial, etc.).
+
+4. 🏗️ **Compile Using RISC-V GCC**:  
+   Compile the C program with `riscv64-unknown-elf-gcc` for both `-O1` and `-Ofast`.
+
+5. 📜 **Generate RISC-V Object Dumps**:  
+   Use `riscv64-unknown-elf-objdump` to generate object dumps for both optimization levels.
+
+## 🔹 **Image 1: Disassembly with `-O1`** 🧩⚙️
+
+- **Compilation**: `riscv64-unknown-elf-gcc -O1 -o sum1ton_o1 sum1ton.c`
+- **Disassembly**: `riscv64-unknown-elf-objdump -d sum1ton_o1 > sum1ton_o1.dump`
+- **Highlights**:
+  - Moderate optimizations.
+  - Loop structure and readability are preserved.
+  - Suitable for debugging and maintaining clarity.
+
+![RISC-V Disassembly -O1]([Task2.2_O1.png](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.2_O1.png?raw=true))
+
+
+## 🔹 **Image 2: Disassembly with `-Ofast`** 🧩⚡
+
+- **Compilation**: `riscv64-unknown-elf-gcc -Ofast -o sum1ton_ofast sum1ton.c`
+- **Disassembly**: `riscv64-unknown-elf-objdump -d sum1ton_ofast > sum1ton_ofast.dump`
+- **Highlights**:
+  - Aggressive optimizations like loop unrolling.
+  - Improved execution speed by reducing instruction count.
+  - Harder to interpret due to optimizations.
+
+![RISC-V Disassembly -Ofast]([Task2.1ofast.dump.png](https://github.com/ghanshyampratap/samsung-riscv/blob/main/Task%202/Task2.1ofast.dump.png?raw=true))
+
+---
+
+## 🔹 **Conclusion**
+
+- Use **`-O1`** for moderate performance and better readability.
+- Use **`-Ofast`** for maximum performance in critical scenarios.
+
+---
+```
+
+Let me know if you need any adjustments!
+---
 
 ## ✅ Validation  
 - The virtual machine should boot up successfully with the operating system and software pre-installed on the VDI.  
