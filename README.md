@@ -153,7 +153,7 @@ This repository contains the results and analysis of **Task 2**, which involves 
 - Use **`-Ofast`** for maximum performance in critical scenarios.
 
 ---
-## Task 3: Decoding RISC-V Instructions: A Visual Guide
+## 🚀 Task 3: Decoding RISC-V Instructions: A Visual Guide
 
 ## 📖 Introduction Section:
 
