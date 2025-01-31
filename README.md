@@ -155,6 +155,7 @@ This repository contains the results and analysis of **Task 2**, which involves 
 ---
 ## 🚀 Task 3: Decoding RISC-V Instructions: A Visual Guide
 
+
 ## 📖 Introduction Section:
 
 RISC-V (Reduced Instruction Set Computer - V) is an open standard instruction set architecture (ISA) based on established reduced instruction set computing principles. Unlike proprietary ISAs, RISC-V is free and open, enabling unrestricted academic and commercial use without licensing fees. This has made RISC-V an attractive option for research, education, and industry applications, fostering innovation and development across various domains.
