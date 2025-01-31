@@ -153,68 +153,50 @@ This repository contains the results and analysis of **Task 2**, which involves 
 - Use **`-Ofast`** for maximum performance in critical scenarios.
 
 ---
-Task 3: Decoding RISC-V Instructions: A Visual Guide
+## Task 3: Decoding RISC-V Instructions: A Visual Guide
 
-📖 Introduction Section:
+## 📖 Introduction Section:
 
 RISC-V (Reduced Instruction Set Computer - V) is an open standard instruction set architecture (ISA) based on established reduced instruction set computing principles. Unlike proprietary ISAs, RISC-V is free and open, enabling unrestricted academic and commercial use without licensing fees. This has made RISC-V an attractive option for research, education, and industry applications, fostering innovation and development across various domains.
 
-🔍 Importance of Understanding Instruction Formats
+## 🔍 Importance of Understanding Instruction Formats
 
 Understanding instruction formats is crucial for several reasons:
 
 Instruction Decoding ✅ Knowing the structure of different instruction formats enables the correct decoding of instructions, which is essential for the CPU to execute them correctly.
-
 Pipeline Design ⚙️ Instruction formats impact the design of the CPU pipeline. Proper handling ensures efficient instruction fetch, decode, execution, memory access, and write-back stages.
-
 Compiler Design 📝 Compilers generate machine code that adheres to the ISA's instruction formats, optimizing performance and efficiency.
-
 Debugging and Verification 🛠️ Helps in identifying issues related to incorrect instruction execution or pipeline hazards.
-
 Extensibility and Customization 🎨 RISC-V's modular nature allows for custom extensions, making it essential to understand the base instruction formats.
 
-👨‍💻 Register Naming in RISC-V
-
+## 👨‍💻 Register Naming in RISC-V
 RISC-V has 32 registers, named x0 through x31. However, they have descriptive names based on their typical usage:
-
 x0 (zero): Always holds the constant value 0.
-
 x1 (ra): Return Address register.
-
 x2 (sp): Stack Pointer register.
-
 x3 (gp): Global Pointer register.
-
 x4 (tp): Thread Pointer register.
 
-🎯 Saved, Temporary, and Argument Registers
-
+## 🎯 Saved, Temporary, and Argument Registers
 Saved Registers (s0-s11): x8, x9, x18-x27 (Preserved across function calls).
-
 Temporary Registers (t0-t6): Used for intermediate calculations.
-
 Argument Registers (a0-a7): x10-x17 (Used to pass function arguments & store return values).
 
 🌟 "Understanding I-Type, S-Type, B-Type, U-Type, and J-Type Instructions"
 
-⚖️ ABI: Application Binary Interface
+## ⚖️ ABI: Application Binary Interface
 
-🎓 BASICS
+## 🎓 BASICS
 
-🔢 Instruction Types and Fields
+## 🔢 Instruction Types and Fields
 
 The RISC-V instructions are categorized based on their field organization:
 
 R-type: Register type
-
 I-type: Immediate type
-
 S-type: Store type
-
 B-type: Branch type
-
 U-type: Upper immediate type
-
 J-type: Jump type
 
 # RISC-V Instruction Format 🚀
