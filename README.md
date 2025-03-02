@@ -770,6 +770,159 @@ addi r12,r4,5_1
 sll r15,r1,r2(2)
 sll r15,r1,r2(2)
 ```
+# 🚀 Task 5: Implementing Digital Circuits using VSDSquadron Mini
+
+## 🛠 Implementation of **BINARY TO GRAY CONVERTER** using VSDSquadron Mini
+
+### 📌 Overview
+This project involves the implementation of a **BINARY TO GRAY CONVERTER** circuit using **VSDSquadron Mini**, a **RISC-V based SoC development kit**.
+
+This project demonstrates the practical application of **digital logic** and **RISC-V architecture** in executing operations, reflecting the process of **reading and writing binary data through GPIO pins**, implementing the operation of **BINARY TO GRAY CONVERTER** through digital logic gates, simulating it using **PlatformIO IDE**, and displaying the outputs using **LEDs**.
+
+---
+
+## 🧰 Components Required to Build **Binary to Gray Code Converter**
+
+- ✅ **VSDSquadron Mini**
+- 💡 **LEDs** (for output indication)
+- 🔘 **Buttons** (for binary input)
+- 🔌 **Breadboard**
+- 🔗 **Jumper Wires**
+- 🖥 **PlatformIO & VS Code** for software development
+
+---
+
+## 🔌 Circuit Connection for **Binary to Gray Code Converter**
+
+### 💡 **LED’s Connection:**
+- **LED1 (Gray Code Bit 2)** connected to **GPIO Pin_0**
+- **LED2 (Gray Code Bit 1)** connected to **GPIO Pin_2**
+- **LED3 (Gray Code Bit 0)** connected to **GPIO Pin_3**
+
+### 🔘 **Buttons Connection:**
+- **Button1 (Binary Input Bit 2)** connected to **GPIO Pin_4**
+- **Button2 (Binary Input Bit 1)** connected to **GPIO Pin_5**
+- **Button3 (Binary Input Bit 0)** connected to **GPIO Pin_6**
+
+### 📝 **PIN DESCRIPTION (According to Header File ch32v00x.h)**
+```
+PD0 => GPIO_Pin_0
+PD1 => GPIO_Pin_1
+PD2 => GPIO_Pin_2
+PD3 => GPIO_Pin_3
+PD4 => GPIO_Pin_4
+PD5 => GPIO_Pin_5
+PD6 => GPIO_Pin_6
+PD7 => GPIO_Pin_7
+```
+
+---
+
+## 🔗 **HARDWARE CONNECTIONS**
+
+A **3-bit Binary to Gray Code Converter** follows a specific logic where each Gray code bit is derived from the corresponding Binary code bit.
+
+### 📊 **Truth Table for 3-bit Binary to Gray Conversion**
+
+| Binary Code (B2 B1 B0) | Gray Code (G2 G1 G0) |
+|----------------|----------------|
+| 000 | 000 |
+| 001 | 001 |
+| 010 | 011 |
+| 011 | 010 |
+| 100 | 110 |
+| 101 | 111 |
+| 110 | 101 |
+| 111 | 100 |
+
+### 🔢 **Conversion Formula:**
+```
+G2 = B2
+G1 = B2 ⊕ B1
+G0 = B1 ⊕ B0
+```
+
+---
+
+## 💻 **BINARY TO GRAY CODE CONVERTER (C Code)**
+
+### 📥 **Include Header Files**
+```c
+#include <ch32v00x.h>
+#include <debug.h>
+#define xor 
+
+int xor(int bit1, int bit2) {
+    return bit1 ^ bit2;
+}
+```
+
+### ⚙ **Pin Configuration**
+```c
+void GPIO_Config(void) {
+    GPIO_InitTypeDef GPIO_InitStructure = {0}; // Structure variable used for GPIO configuration
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // Enable clock for Port D
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6; // Input Pins
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Input Type
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_2 | GPIO_Pin_3; // Output Pins
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Output Type
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Speed
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+```
+
+### 🏁 **Main Function**
+```c
+int main(void) {
+    uint8_t b0, b1, b2, g0, g1, g2 = 0;
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
+
+    while (1) {
+        b0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+        b1 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_5);
+        b2 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_6);
+
+        g2 = xor(0, b2);
+        g1 = xor(b2, b1);
+        g0 = xor(b1, b0);
+
+        if (g0 == 0) {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET);
+        } else {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET);
+        }
+
+        if (g1 == 0) {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_2, RESET);
+        } else {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_2, SET);
+        }
+
+        if (g2 == 0) {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_3, RESET);
+        } else {
+            GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET);
+        }
+    }
+}
+```
+
+---
+
+## 🎯 **Conclusion**
+This project successfully implements a **BINARY TO GRAY CODE CONVERTER** using **VSDSquadron Mini**. The circuit utilizes digital logic and **RISC-V architecture**, demonstrating practical **binary data conversion** using **GPIO pins and LEDs**.
+
+📌 **Key Takeaways:**
+- Understanding digital logic conversion
+- Implementing GPIO-based input/output
+- Exploring **RISC-V architecture** for digital applications
+- Using **PlatformIO IDE** for embedded development
 
 ## ✅ Validation  
 - The virtual machine should boot up successfully with the operating system and software pre-installed on the VDI.  
