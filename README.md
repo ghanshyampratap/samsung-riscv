@@ -654,6 +654,122 @@ This instruction loads a 32-bit immediate value into a register.
 **Hex**: `00008067`
 
 ---
+# 🚀 Task 4: Functional Simulation of RISC-V Core using Verilog & GTKWave
+
+## 🎯 OBJECTIVE
+Perform a functional simulation of the given **RISC-V Core Verilog netlist and testbench**.
+
+## 🛠 Steps to Perform Functional Simulation for RISC-V:
+1. 🖥️ Install **iverilog** and **GTKWave** in Ubuntu using suitable commands.
+2. 🏗️ Compile the **RISC-V Core: Verilog netlist and Testbench**.
+3. 📊 Observe the waveform output in **GTKWave** window.
+
+## 📥 Installing iverilog and GTKWave in Ubuntu:
+```bash
+sudo apt install iverilog gtkwave
+```
+
+## 🔧 Simulate and Run the Verilog Code:
+```bash
+iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+./iiitb_rv32i
+gtkwave iiitb_rv32i.vcd
+```
+
+## 📌 GTKWAVE + TERMINAL COMMANDS
+🖥️ **GTKWAKE1**
+
+## 📌 VERILOG COMMANDS
+🖥️ **VERILOG COMMANDS**
+
+---
+
+## 📈 Output Waveforms:
+The output waveforms show the **instructions performed** in a **5-stage pipelined architecture**.
+
+### ✅ Instruction 1:
+```assembly
+add r6,r1,r2
+add r6,r1,r2
+```
+
+### ✅ Instruction 2:
+```assembly
+sub r7,r1,r2
+sub r7,r1,r2
+```
+
+### ✅ Instruction 3:
+```assembly
+and r8,r1,r3
+and r8,r1,r3
+```
+
+### ✅ Instruction 4:
+```assembly
+or r9,r2,r5
+or r9,r2,r5
+```
+
+### ✅ Instruction 5:
+```assembly
+xor r10,r1,r4
+xor r10,r1,r4
+```
+
+### ✅ Instruction 6:
+```assembly
+slt r11,r2,r4
+slt r11,r2,r4
+```
+
+### ✅ Instruction 7:
+```assembly
+addi r12,r4,5
+addi r12,r4,5
+```
+
+### ✅ Instruction 8:
+```assembly
+sw r3,r1,2
+sw r3,r1,2
+```
+
+### ✅ Instruction 9:
+```assembly
+lw r13,r1,2
+lw r13,r1,2
+```
+
+### ✅ Instruction 10:
+```assembly
+beq r0,r0,15
+beq r0,r0,15
+```
+
+### ✅ Instruction 11:
+```assembly
+add r14,r2,r2
+add r14,r2,r2
+```
+
+### ✅ Instruction 12:
+```assembly
+bne r0,r1,20
+bne r0,r1,20
+```
+
+### ✅ Instruction 13:
+```assembly
+addi r12,r4,5
+addi r12,r4,5_1
+```
+
+### ✅ Instruction 14:
+```assembly
+sll r15,r1,r2(2)
+sll r15,r1,r2(2)
+```
 
 ## ✅ Validation  
 - The virtual machine should boot up successfully with the operating system and software pre-installed on the VDI.  
